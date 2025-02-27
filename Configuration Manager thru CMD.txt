@@ -1,0 +1,8 @@
+
+
+SQL Server version	Command
+SQL Server 2019	SQLServerManager15.msc
+SQL Server 2017	SQLServerManager14.msc
+SQL Server 2016	SQLServerManager13.msc
+SQL Server 2014	SQLServerManager12.msc
+SQL Server 2012	SQLServerManager11.msc

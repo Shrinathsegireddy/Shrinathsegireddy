@@ -1,0 +1,38 @@
+CHG0135914 & CHG0137053 raised for Patching
+RITM4192723 raised for postgres
+RITM4192740 raised for DB CI update
+
+D:\DBA\Backup_Report_Support_Files\size.bat >>D:\DBA\Backup_Report\size_11072023.txt
+
+
+D:\DBA\Backup_Report_Support_Files\size.bat >>D:\DBA\Backup_Report\size_02102023.txt
+
+
+Port change
+CHG0140682
+
+
+
+D:\DBA\Backup_Report_Support_Files\size.bat >>D:\DBA\Backup_Report\size_13Feb2024.txt
+
+CHG0146078 Patching
+
+Due to multiple instances which are not maintained by DBA team causing high CPU utilization. Please check from your end.
+
+Since the Server belongs to DB. need the ownership to be changed from Server approvers to Database technical approvers
+
+[3:24 AM] Sudharshan Reddy
+rx6$751GRe
+
+sMYLm11admin
+
+Hi team,
+
+Please trigger the full backup as we are performing patching activity.  Kindly enable MM from 14th feb 9 AM IST - 2 PM IST.
+
+
+!k-4[*ge2::#ava
+
+
+
+

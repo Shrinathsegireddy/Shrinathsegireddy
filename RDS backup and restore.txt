@@ -1,0 +1,29 @@
+s3://mylan-us-standard-internal-s3/mylanweb/wfe/sitecore/93/dev/dbs/RITM4221649/
+
+exec msdb.dbo.rds_restore_database
+
+@restore_db_name='Generic_Websites_Tosca',@s3_arn_to_restore_from='arn:aws:s3:::mylan-us-standard-internal-s3/mylanweb/wfe/sitecore/93/dev/dbs/RITM4221649/Generic_Websites_RITM4221649.bak'
+
+ 
+
+
+
+check status
+
+exec msdb.dbo.rds_task_status @db_name='Generic_Websites_Tosca'
+
+
+
+
+
+s3://mylan-us-standard-internal-s3/mylanweb/wfe/sitecore/Galen/auth/dbs/
+ 
+exec msdb.dbo.rds_backup_database
+@source_db_name='SC_CM_Web',
+@s3_arn_to_backup_to= 'arn:aws:s3:::mylan-us-standard-internal-s3/mylanweb/wfe/sitecore/93/dev/dbs/',
+@overwrite_s3_backup_file=1 
+ 
+SELECT [log_reuse_wait_desc]
+    FROM [master].[sys].[databases]
+    WHERE [name] = N'Company';
+GO
